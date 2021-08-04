@@ -44,7 +44,8 @@ class GoogleCloudPlatform extends Page {
   get mainContent() { return $('//*[@id="gc-wrapper"]/main') }
 
   open() {
-    return super.open(`https://${params.environment}cloud.google.com`);
+    return super.open(`https://cloud.google.com`);
+    //${params.environment}
   }
 
   async searchForPricingCalculator() {
