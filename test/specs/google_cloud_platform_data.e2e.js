@@ -42,7 +42,7 @@ describe('open calc page, set params and check them', () => {
   });
 //change ssd quantity from 2 to 1
   it('Total available local SSD space is 2x375 GiB', async () => {
-    await expect(googleCloudPlatform.estimateTableSSDspace).toHaveText('Total available local SSD space 1x375 GiB');
+    await expect(googleCloudPlatform.estimateTableSSDspace).toHaveText('Total available local SSD space 2x375 GiB');
   });
 
   it('Commitment term is 1 Year', async () => {
